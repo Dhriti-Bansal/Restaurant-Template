@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top">
+        <p class="top_hours">Opening time: 8:00 am</p>
+        <a href="tel:+91 7087911680"class="top_phone">Reservation: +91 7087911680</a>
+    </div>
+
+    <header class="intro">
+        <h1 class="brand">Spicy</h1>
+      </header>
+
+      <style>
+        .mySlides {
+        display:none;
+        padding-left: 350px;
+        padding-top: 30px;
+      }
+        </style>
+        
+        <div class="w3-content w3-section" style="max-width:500px">
+          <img class="mySlides w3-animate-top" src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/best_and_worst_italian_dishes_slideshow/650x350_best_and_worst_italian_dishes_slideshow.jpg" style="width:120%">
+          <img class="mySlides w3-animate-bottom" src="https://www.melissahartfiel.com/wp-content/uploads/2013/04/20130426-1304_untitled0051.jpg" style="width:120%">
+          <img class="mySlides w3-animate-top" src="https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/content9442.jpg" style="width:120%">
+          <img class="mySlides w3-animate-top" src="https://purewows3.imgix.net/images/articles/2020_02/traditional-chinese-food-600.jpg?auto=format,compress&cs=strip" style="width:120%">
+        </div>
+        
+        <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2500);    
+          }
+          </script>
+
+        <section class="menu shaded">
+    <h2 class="menu__title">Cuisine</h2>
+
+    <div class="category">
+      <h3 class="category__title after--left">Starters</h3>
+      <div class="menu__item">
+        <strong class="item__title">Chicken Wings</strong>
+        <span class="price">$ 50</span>
+        <p class="ingredients">Served with baby carrots and bleu cheese</p>
+      </div>
+      <div class="menu__item">
+        <strong class="item__title">Fried Pickle Chips</strong>
+        <span class="price">$ 10</span>
+        <p class="ingredients">Served with key sauce</p>
+      </div>
+      <div class="menu__item">
+        <strong class="item__title">Onion Rings</strong>
+        <span class="price">$ 55</span>
+        <p class="ingredients">Server with honey-dijon dressing</p>
+      </div>
+      <div class="menu__item">
+        <strong class="item__title">Salmon la Veui</strong>
+        <span class="price">$ 65</span>
+        <p class="ingredients">fresh salmon, potato, salad</p>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3 class="category__title after--left">Salads</h3>
+      <div class="menu__item">
+        <strong class="item__title">Chicken Ceasar</strong>
+        <span class="price">$ 15</span>
+        <p class="ingredients">Crispy chicken slices, chopped eggs</p>
+      </div>
+      <div class="menu__item">
+        <strong class="item__title">Garden Deluxe</strong>
+        <span class="price">$ 19</span>
+        <p class="ingredients">Sundried tomatoes, shredded carrots</p>
+      </div>
+      <div class="menu__item favourite">
+        <strong class="item__title">Greek</strong>
+        <span class="price">$ 17</span>
+        <p class="ingredients">Grape tomatoes, feta cheese, cucumbers</p>
+      </div>
+      <div class="menu__item">
+        <strong class="item__title">Tivoli</strong>
+        <span class="price">$ 22</span>
+        <p class="ingredients">Radiaore pasta, tangy pepperoni, baked ham</p>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3 class="category__title after--left">Pasta</h3>
+      <div class="menu__item favourite">
+        <strong class="item__title">Spaghetti Aglio</strong>
+        <span class="price">$ 20</span>
+        <p class="ingredients">Garlic, olive oil and chilli</p>
+      </div>
+      <div class="menu__item">
+        <strong class="item__title">Spaghetti al</strong>
+        <span class="price">$ 19</span>
+        <p class="ingredients">Fresh tomato sauce, garlic and basil</p>
+      </div>
+      <div class="menu__item">
+        <strong class="item__title">Quatro Cheese</strong>
+        <span class="price">$ 17</span>
+        <p class="ingredients">Bacon egg, chredded cheese</p>
+      </div>
+      <div class="menu__item">
+        <strong class="item__title">Penne all'</strong>
+        <span class="price">$ 22</span>
+        <p class="ingredients">Fresh cream, black pepper</p>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3 class="category__title after--left">Bread</h3>
+      <div class="menu__item favourite">
+        <strong class="item__title">Baguette</strong>
+        <span class="price">$ 20</span>
+        <p class="ingredients">French style sourdough bread</p>
+      </div>
+      <div class="menu__item">
+        <strong class="item__title">Wheat bread</strong>
+        <span class="price">$ 19</span>
+        <p class="ingredients">Made from bread flour</p>
+      </div>
+      <div class="menu__item">
+        <strong class="item__title">Banana Bread</strong>
+        <span class="price">$ 17</span>
+        <p class="ingredients">Soft and open crumb</p>
+      </div>
+      <div class="menu__item">
+        <strong class="item__title">English Muffin</strong>
+        <span class="price">$ 22</span>
+        <p class="ingredients">Whole wheat and rye</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <h2 class="text">Subscribe to our daily menus</h2>
+    <form action="#" class="subscribe__form">
+      <input type="email" aria-label="Your email" name="email" placeholder="someone@gmail.com" class="subscribe__input" required>
+      <button class="subscribe__button">Subscribe</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class=footer__group>
+      <div class="footer__block footer__title">
+        <h3>Spicy</h3>
+      </div>
+      <div class="footer__block footer__reservations">
+        <h4>Reservations</h4>
+        <a href="tel:+91 7087911680">+91 7087911680</a>
+        <a href="mailto:reservation@spicy.com?Subject=Reservation">reservation@spicy.com</a>
+      </div>
+      <div class="footer__block footer__opening">
+        <h4>Opening hours</h4>
+        <table>
+          <tr>
+            <td>Monday - Friday</td>
+            <td>8:00 - 10:00</td>
+          </tr>
+          <tr>
+            <td>Saturday - Sunday</td>
+            <td>8:00 - 12:00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="footer__block footer__locations">
+        <h4>Locations</h4>
+        <a href="#">India - Punjab</a>
+        <a href="#">Canada - Toronto</a>
+        <a href="#">Dubai</a>
+      </div>
+    </div>
+    <p class="copyright">Copyright 2020, All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
